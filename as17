@@ -1,0 +1,61 @@
+#question 1
+from tkinter import*
+root=Tk()
+label=Label(root,text="HELLO WORLD").pack()
+button=Button(root,text='EXIT',width=25,command=root.destroy)
+button.pack()
+root.mainloop()
+
+#question2
+
+from tkinter import*
+root=Tk()
+def show():
+    print("we are python students")
+label=Label(root,text="HELLO WORLD").pack()
+button=Button(root,text='EXIT',width=25,command=root.destroy).pack()
+button2=Button(root,text="click",command=show).pack()
+root.mainloop()
+
+#QUES3
+from tkinter import*
+import tkinter as tk
+s=tk.Tk()
+s.title("hello")
+def nas():
+    s.destroy()
+button1=tk.Button(s,text='Exit',width=25,command=nas).pack()
+def nas2():
+    var1=StringVar()
+    label1=Label(s,textvariable=var1)
+    var1.set("hello fraands chai pilo")
+    label1.pack()
+    label2.destroy()
+button2=tk.Button(s,text='fraands',command=nas2).pack()
+var2=StringVar()
+label2=Label(s,textvariable=var2)
+var2.set("frnds chai kyu nahi pi")
+label2.pack()
+s.mainloop()
+
+#QUES4
+
+from tkinter import *
+import tkinter
+import tkinter as tk
+z=tk.Tk()
+z.title("NASS")
+l1=Label(z,text='name')
+l1.grid(row=0)
+e1=Entry(z)
+e1.grid(row=0,column=3)
+def miss():
+    e=e1.get()
+    print(e)
+    z.destroy()
+b1= Button(z,text='enter',width=24,command=miss)
+b1.grid(row=4,column=4)
+mainloop()
+
+
+
